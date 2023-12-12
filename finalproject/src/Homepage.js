@@ -11,7 +11,7 @@ function Welcomepage(){
         //top part of the page Section
         <div className='topPage-section'>
             <div className='storename-btn'>
-                Will's Gaming Console Accessories
+                
                 <div className='cart-btn'>
                     <div className='menubar-btn'>
 
