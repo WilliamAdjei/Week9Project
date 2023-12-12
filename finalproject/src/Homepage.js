@@ -1,13 +1,14 @@
+import './Homepage.css'
 
 function Welcomepage(){
 
     return(
-        <div className="StoreName">
+        <div className="storeName">
             <div className="Cart">
                 <div className="Home">
-                    <div className="products-recommeded">
+                    <div className="homepage-container">
                         <div className="FAQ">
-                            <div className="About Us">
+                            <div className="aboutUs-btn">
                                 
 
                             </div>
@@ -23,3 +24,5 @@ function Welcomepage(){
         </div>
     )
 }
+
+export default Welcomepage
