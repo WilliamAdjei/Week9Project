@@ -1,42 +1,41 @@
-.homepage-container{
-    /* border-left: 1px solid black;
-  background-color: white;
-  flex: 0.2;
-  flex-direction: row;
-  height: 100vh; */
-}
-
-.storeName{
-    /* width: 20px;
-    height: 30%;
-    background-color: antiquewhite; */
-
-}
-
-
-
-.first-container{
-  width: 500px;
-  height: 100px;
+.topPage-section{
+  width: 600%;
+  height: 60px;
   background-color: blue;
 
 }
 
-.second-container{
+.storename-btn{
+  width: 60%;
+  height: 70px;
+  
+ 
+  
+
+}
+
+.cart-btn{
+  width: 60%;
+  height: 75px;
+  
+
+
+}
+
+.menubar-btn{
   width: 100%;
-  height: 50px;
-  background-color: azure;
-}
-
-.Cart{
-
+  height: 60px;
+  
 
 }
 
-.home{
+.main-container{
 
 }
 
-.aboutUs-btn{
+.products-section{
 
 }
+
+
+
