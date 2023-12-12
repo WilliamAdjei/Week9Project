@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Welcomepage from './Homepage';
+import Header from './LearningPage';
 
 function App() {
   return (
