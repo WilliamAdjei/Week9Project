@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Welcomepage from './Homepage';
+import Welcomepage from './Pages/Homepage';
 import Header from './LearningPage';
 import AppHeader from './Components/Header';
 import Footer from './Components/Footer';
