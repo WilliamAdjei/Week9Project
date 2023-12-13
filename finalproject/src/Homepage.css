@@ -1,40 +1,58 @@
-.topPage-section{
-  /* width: 600%;
-  height: 60px;
-  background-color: blue; */
+.storeName-btn{
+  height: 50px;
+  width: 50%;
+  background-color: blue;
+}
+.Cart-btn{
 
 }
+.Home-btn{
 
-.storename-btn{
-  /* width: 60%;
-  height: 70px; */
+}
+.btn2{
   
- 
+}
+.btn3{
   
-
 }
-
-.cart-btn{
-  /* width: 60%;
-  height: 75px; */
+.btn4{
   
-
-
 }
-
-.menubar-btn{
-  /* width: 100%;
-  height: 60px; */
+.btn5{
   
-
 }
-
-.main-container{
-
+.Link-container{
+  
 }
-
-.products-section{
-
+.RecommendProduct-btn{
+  
+}
+.item1{
+  
+}
+.item2{
+  
+}
+.item3{
+  
+}
+.item4{
+  
+}
+.item5{
+  
+}
+.item6{
+  
+}
+.FAQ-btn{
+  
+}
+.Help-btn{
+  
+}
+.About-btn{
+  
 }
 
 

@@ -9,6 +9,7 @@ import Navbar from './Navbar';
 import Pricing from './Pages/Pricing';
 import AboutPage from './Pages/About';
 import Home from './Pages/Homepage';
+import HOMEPAGE from './homepage';
 
  
 
@@ -36,7 +37,7 @@ function App() {
       <Navbar/>
       <div className='container'>{Components}</div>
       
-        
+        <HOMEPAGE/>
         <AppHeader/>
         <PageContent/>
         <Footer/>
