@@ -9,7 +9,7 @@ import Navbar from './Navbar';
 import Pricing from './Pages/Pricing';
 import AboutPage from './Pages/About';
 import Home from './Pages/Homepage';
-import AboutPage from './Pages/About';
+
  
 
 function App() {
