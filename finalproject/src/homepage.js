@@ -17,7 +17,8 @@ function HomePage(){
       </header>
 
 
-      {/* Menu bar containing sections like Home, Laptops, PC, Gaming Monitors, Accessories, Headsets, Gaming Chairs, Mobile Devices */}
+      {/* Menu bar containing sections like Home, Laptops, PC, Gaming Monitors, 
+      Accessories, Headsets, Gaming Chairs, Mobile Devices */}
       <nav className='Main-menu'>
         <div className='container'>
           <ul>

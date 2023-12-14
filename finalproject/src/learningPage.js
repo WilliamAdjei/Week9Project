@@ -1,4 +1,8 @@
-function LearningPage(){
+import './Learningpage.css'
+
+
+
+function LEARNINGPAGE(){
 
     return(
 
@@ -81,4 +85,4 @@ function LearningPage(){
     )
 }
 
-export default LearningPage
+export default LEARNINGPAGE
