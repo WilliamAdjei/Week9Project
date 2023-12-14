@@ -1,25 +1,21 @@
+import React from "react";
+
 function QuizPage(){
 
+  const [answers, setAnswers] = useState(Array(5).fill(null));
+  const [score, setScore] = useState(null);
+
+
+  const questions = [
+    "What is the primary function of a CPU?",
+    "Which component stores data temporarily for quick access by the CPU?",
+    "What does RAM stand for?",
+    "What is the purpose of a graphics card?",
+    "Which component is responsible for long-term data storage?",
+  ];
+
     return(
-
-
-        
-        <nav className="main-menu">
-            {/**Menu bar containing Home, Laptops, PC, Gaming Monitors, Accessories, 
-              * Headsets, Gaming Chairs, Mobile Devices */}
-            <div className="container">
-                <ul>
-                <li>Home</li> 
-                <li>Laptops</li> 
-                <li>PC</li> 
-                <li>Gaming Monitors</li> 
-                <li>Accessories</li> 
-                <li>Headsets</li> 
-                <li>Gaming Chairs</li> 
-                <li>Mobile Devices</li> 
-                </ul>
-            </div>
-        </nav>
+        <div></div>
     )
 
 }

@@ -43,7 +43,7 @@ function LEARNINGPAGE(){
                     <h2>Questionnaire</h2>
                     <ul>
                         <li>Are you familiar with computers</li>
-                        <li>Do you have prior programming experience?</li>
+                        <li>Do you have a job that requires use of latops/PC?</li>
                         <li>How often do you browse the internet</li>
                         <li>What tasks do you use your computer to complete</li>
                     </ul>
