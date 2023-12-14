@@ -1,9 +1,7 @@
-function QuizPage(){
+function ProductPage(){
 
     return(
 
-
-        
         <nav className="main-menu">
             {/**Menu bar containing Home, Laptops, PC, Gaming Monitors, Accessories, 
               * Headsets, Gaming Chairs, Mobile Devices */}
@@ -20,8 +18,9 @@ function QuizPage(){
                 </ul>
             </div>
         </nav>
+
     )
 
 }
 
-export default QuizPage
+export default ProductPage
