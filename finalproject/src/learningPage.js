@@ -2,7 +2,7 @@ import './Learningpage.css'
 
 
 
-function LEARNINGPAGE(){
+function LearningPage(){
 
     return(
 
@@ -85,4 +85,4 @@ function LEARNINGPAGE(){
     )
 }
 
-export default LEARNINGPAGE
+export default LearningPage

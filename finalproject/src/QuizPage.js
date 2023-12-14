@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import './quizpage.css';
 
 function QuizPage() {
-    
-  //Using UseState to create questions and answers on Computer parts  
-  const [answers, setAnswers] = useState(Array(5).fill(null));
+
+  //Using UseState to create questions and answers on Computer parts   
+  const [selectedAnswers, setSelectedAnswers] = useState(Array(5).fill(null));
   const [score, setScore] = useState(null);
 
+  //Question Array
   const questions = [
     "What is the primary function of a CPU?",
     "Which component stores data temporarily for quick access by the CPU?",
@@ -15,6 +16,7 @@ function QuizPage() {
     "Which component is responsible for long-term data storage?",
   ];
 
+  //Choices Array
   const choices = [
     ["Processing data", "Storing data", "Displaying data", "Inputting data"],
     ["Hard Drive", "RAM", "CPU", "Motherboard"],
@@ -23,17 +25,19 @@ function QuizPage() {
     ["CPU", "RAM", "Hard Drive", "Motherboard"],
   ];
 
-  // Using a Handle Answer arrow Function
+  //If statement
   const handleAnswer = (questionIndex, choiceIndex) => {
-    const newAnswers = [...answers];
-    newAnswers[questionIndex] = choiceIndex;
-    setAnswers(newAnswers);
+    if (selectedAnswers[questionIndex] === null) {
+      const newSelectedAnswers = [...selectedAnswers];
+      newSelectedAnswers[questionIndex] = choiceIndex;
+      setSelectedAnswers(newSelectedAnswers);
+    }
   };
 
-  // Using a Calculating Score arrow Function
+  // Using a calculateScore arrow Function
   const calculateScore = () => {
     const correctAnswers = [0, 1, 0, 1, 2]; // Assuming correct answers for each question
-    const userScore = answers.reduce((acc, answer, index) => (answer === correctAnswers[index] ? acc + 1 : acc), 0);
+    const userScore = selectedAnswers.reduce((acc, answer, index) => (answer === correctAnswers[index] ? acc + 1 : acc), 0);
     setScore(userScore);
   };
 
@@ -51,7 +55,7 @@ function QuizPage() {
         </div>
       </header>
 
-      {/*Menu bar containing Home, Laptops, PC, Gaming Monitors, Accessories, Headsets, Gaming Chairs, Mobile Devices */}
+      {/* Menu bar containing Home, Laptops, PC, Gaming Monitors, Accessories, Headsets, Gaming Chairs, Mobile Devices */}
       <nav className="main-menu">
         <div className="container">
           <ul>
@@ -77,7 +81,11 @@ function QuizPage() {
                 <div className="question">{`${index + 1}. ${question}`}</div>
                 <div className="choices">
                   {choices[index].map((choice, choiceIndex) => (
-                    <button key={choiceIndex} onClick={() => handleAnswer(index, choiceIndex)}>
+                    <button
+                      key={choiceIndex}
+                      className={selectedAnswers[index] === choiceIndex ? 'selected' : ''}
+                      onClick={() => handleAnswer(index, choiceIndex)}
+                    >
                       {choice}
                     </button>
                   ))}
