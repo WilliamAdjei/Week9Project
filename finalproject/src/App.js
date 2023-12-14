@@ -56,6 +56,8 @@ function App() {
             <li>FAQ</li>
             <li>Contact Us</li>
             <li>Privacy Policy</li>
+            <li>About Us</li>
+
           </ul>
         </div>
       </footer>
