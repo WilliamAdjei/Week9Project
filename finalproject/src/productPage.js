@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import './App.css';
 
 function ProductPage() {
-  //Creating Use Sate for Cart Items  
+  //Creating a UseStaeof the Cart Items  
   const [cartItems, setCartItems] = useState(0);
 
-  //AddtoCart function
+  //Add to Cart function to add the items to the basket
   const addToCart = () => {
     setCartItems(cartItems + 1);
   };
@@ -31,14 +31,18 @@ function ProductPage() {
       <section className="product-container">
         <div className="container">
           <div className="product-image"></div>
-          <div className="product-info-container">
-            <h2>Dell Laptop</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <div className="add-to-cart">
-              <button onClick={addToCart}>Add to Cart</button>
-            </div>
+        </div>
+      </section>
+
+      {/* Product Info Container */}
+      <section className="product-info-container">
+        <div className="container">
+          <h2>Dell Laptop</h2>
+          <p>
+            This dell latop has a 14 inch display.
+          </p>
+          <div className="add-to-cart">
+            <button onClick={addToCart}>Add to Cart</button>
           </div>
         </div>
       </section>
@@ -59,3 +63,4 @@ function ProductPage() {
 }
 
 export default ProductPage;
+
