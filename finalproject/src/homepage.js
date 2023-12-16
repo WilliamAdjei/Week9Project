@@ -2,9 +2,49 @@ import './homepage.css'
 
 function HomePage(){
 
+  /**
+   * Menu Bar for Store Name and Cart
+   * In this file I am naming the divs, header, span and h1 needed for the Menu Bar 
+   * containing the Store Name and Cart.
+   * The H1 acts like a label at the top of the page, the divs are for 
+   * grouping sections of the website together to style it.
+   * The span divs are used to group elements of the page together to style them
+   */
+
+
+  /**
+   * Menu bar containing sections like Home, Laptops, PC, Gaming Monitors
+   * For this section I used the nav, div, ul and li tags.
+   * The reason for using the div tag is to name the container that will hold the categories of products
+   * The reason for using the nav tag is to create a navigation menu
+   * The reason for using the ul and li tags is to create an item list which is part of an unordered or ordered list
+   */
+
+
+  /**
+   * Container with a link called Click Here
+   * For this section I used div and a tags
+   * The reason for using the a tags is to create a link that takes you from one page to another when clicked on
+   */
+
+
+  /**
+   * Subheading with Product recommendations
+   * For this section I used div and h2 tag
+   * The reason for using h2 was to create a bold heading for Product Recommendations
+   */
+
+  /**
+   * Menu Bar containing FAQ, contact us, and privacy policy
+   * For this section I used footer, div, ul and li tags.
+   * The reason for using footer is to represent data containing copyright information e.g Privacy Policy
+   * The reason for using lins is to create links that take you from one pae to another
+   */
+
     return(
         <div className="homepage">
             {/* The Menu bar which contains the Store Name and Cart */}
+            
       <header className='storename-header'>
         <div className='link-container'>
           <div className='store-info'>
@@ -37,7 +77,7 @@ function HomePage(){
       {/* Container with a link called Click Here */}
       <div className='click-here-container'>
         <div className='container'>
-        <a href="/click-here" className="click-here-link">Need Help? 
+        <a href="/.learningPage.js" className="click-here-link">Need Help? 
         Click Here</a>
         </div>
       </div>

@@ -3,11 +3,26 @@ import './quizpage.css';
 
 function QuizPage() {
 
-  //Using UseState to create questions and answers on Computer parts   
+  /**
+   * Quiz Section
+   * For the quiz section I used map functions, concatenation, on click
+   * I used the map function to iterate through the question and index arrays and also for the choices array
+   * I used the onclick for the CalculateScore button and the handle answer function
+   * I used these methods it helps easily to write a method on how many answers the user gets right 
+   * based on the choices they made in the choices section.
+   */
+
+  //Using UseState to create questions and answers on Computer parts
+  /**
+   * Using UseSate to track the selected answers and the score the person gets
+   */
   const [selectedAnswers, setSelectedAnswers] = useState(Array(5).fill(null));
   const [score, setScore] = useState(null);
 
-  //Question Array
+  //Question list Object
+  /**
+   * Using An array to create a list of quiz questions about computers
+   */
   const questions = [
     "What is the primary function of a CPU?",
     "Which component stores data temporarily for quick access by the CPU?",
@@ -17,6 +32,9 @@ function QuizPage() {
   ];
 
   //Choices Array
+  /**
+   * Creating an array of the list of choices the user can pick from for the questions.
+   */
   const choices = [
     ["Processing data", "Storing data", "Displaying data", "Inputting data"],
     ["Hard Drive", "RAM", "CPU", "Motherboard"],
@@ -26,6 +44,12 @@ function QuizPage() {
   ];
 
   //If statement
+  /**
+   * 
+   * @param {Using an if statement for the questions and answers} questionIndex 
+   * @param {*} choiceIndex 
+   */
+   
   const handleAnswer = (questionIndex, choiceIndex) => {
     if (selectedAnswers[questionIndex] === null) {
       const newSelectedAnswers = [...selectedAnswers];
@@ -35,9 +59,15 @@ function QuizPage() {
   };
 
   // Using a calculateScore arrow Function
+  /**
+   * Method used to calculate the score the user gets after choosing therr answers.
+   * This method is assuming the process that happens when there is a correct answer.
+   * I used onclick for the
+   */
   const calculateScore = () => {
     const correctAnswers = [0, 1, 0, 1, 2]; // Assuming correct answers for each question
-    const userScore = selectedAnswers.reduce((acc, answer, index) => (answer === correctAnswers[index] ? acc + 1 : acc), 0);
+    const userScore = selectedAnswers.reduce((acc, answer, index) => 
+    (answer === correctAnswers[index] ? acc + 1 : acc), 0);
     setScore(userScore);
   };
 
@@ -55,7 +85,8 @@ function QuizPage() {
         </div>
       </header>
 
-      {/* Menu bar containing Home, Laptops, PC, Gaming Monitors, Accessories, Headsets, Gaming Chairs, Mobile Devices */}
+      {/* Menu bar containing Home, Laptops, PC, Gaming Monitors, 
+      Accessories, Headsets, Gaming Chairs, Mobile Devices */}
       <nav className="main-menu">
         <div className="container">
           <ul>
@@ -72,6 +103,7 @@ function QuizPage() {
       </nav>
 
       {/* Quiz Section */}
+      
       <section className="quiz-section">
         <div className="container">
           <h2>Computer Parts Quiz</h2>
