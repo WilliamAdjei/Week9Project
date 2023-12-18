@@ -37,14 +37,6 @@ body {
   margin-right: 5px;
 }
 
-.cart-items {
-  background-color: #007bff;
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 50%;
-  font-size: 14px;
-}
-
 /* Main Menu */
 .main-menu {
   background-color: #007bff;
@@ -62,12 +54,12 @@ body {
   cursor: pointer;
 }
 
-/* Help Container */
-.help-container {
+/* Click Here Container */
+.click-here-container {
   padding: 20px 0;
 }
 
-.help-container a {
+.click-here-container a {
   color: #007bff;
   text-decoration: none;
   font-weight: bold;
@@ -82,9 +74,22 @@ body {
   margin-bottom: 10px;
 }
 
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-item {
+  width: 48%;
+  padding: 10px;
+  margin: 0 1% 20px 1%;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
 /* Bottom Bar */
 .bottom-bar {
-  background-color: blue;
+  background-color: #333;
   color: #fff;
   padding: 20px 0;
   text-align: center;
