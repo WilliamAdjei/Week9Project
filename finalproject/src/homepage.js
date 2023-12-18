@@ -1,5 +1,9 @@
 import './homepage.css'
 
+import { Link} from "react-router-dom";
+
+
+
 function HomePage(){
 
   /**
@@ -78,7 +82,7 @@ function HomePage(){
       {/* Container with a link called Click Here */}
       <div className='click-here-container'>
         <div className='container'>
-        <a href="./learningPage.js" className="click-here-link">Need Help? 
+        <a href="/learningpage" className="click-here-link">Need Help? 
         Click Here</a>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import laptop from "./images/Dell Latitude 9430.webp"
 
 function ProductPage() {
   //Creating a UseStateof the Cart Items
@@ -78,8 +79,10 @@ function ProductPage() {
         <div className="container">
           <h2>Dell Laptop</h2>
           <p>
-            This dell latop has a 14 inch display.
+          The Latitude 9430 blends style and business. Its dark gray chassis is all metal and of very high quality. None of its surfaces flex even under strong pressure.
+          Dell's Latitude 9430 2-in-1 packs the right features for a premium business laptop, including a premium build, battery life, and more.
           </p>
+          <img src='./images/Dell Latitude 9430.webp'></img>
           <div className="add-to-cart">
             <button onClick={addToCart}>Add to Cart</button>
           </div>
