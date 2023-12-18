@@ -13,14 +13,11 @@ function App() {
   return (
     <div className="App">
       
-      <HomePage></HomePage>
+      {/* <HomePage></HomePage> */}
       {/* <LearningPage></LearningPage> */}
-     {/* <ProductPage></ProductPage> */}
+     <ProductPage></ProductPage>
      
       
-
-  
-
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import laptop from "./images/Dell Latitude 9430.webp"
+import tablet from "./images/Samsung Galaxy tab a8.jpg"
 
 function ProductPage() {
   //Creating a UseStateof the Cart Items
@@ -77,12 +78,27 @@ function ProductPage() {
       {/* Product Info Container */}
       <section className="product-info-container">
         <div className="container">
-          <h2>Dell Laptop</h2>
+          <h2>Dell Laptop 9430</h2>
+          <h3>About This Item</h3>
           <p>
           The Latitude 9430 blends style and business. Its dark gray chassis is all metal and of very high quality. None of its surfaces flex even under strong pressure.
           Dell's Latitude 9430 2-in-1 packs the right features for a premium business laptop, including a premium build, battery life, and more.
           </p>
-          <img src='./images/Dell Latitude 9430.webp'></img>
+          <p>
+          This product is in "Excellent condition". It shows no signs of cosmetic damage. This product is eligible for a replacement or refund within 1-Year of receipt if it does not work as expected.
+          </p>
+          <img src={laptop} width={300} height={200}></img>
+          <div className="add-to-cart">
+            <button onClick={addToCart}>Add to Cart</button>
+          </div>
+
+          <h2> Samsung Galaxy Tab a8</h2>
+          <h3>About This Item</h3>
+          <p>This tablet has many features. It also comes with a pen that you can use to make notes</p>
+          <p>Playful aesthetics with a touch of style: the Galaxy Tab A8 has a lively mood and a youthful look.</p>
+          <p>The Galaxy Tab A8 Tablet PC is designed to give you an absolute immerimmerEven when you are on the go, the tablet PC Galaxy Tab A8 opens up an immersive universe of content and games and activities that young people love.</p>
+          <img src={tablet} width={300} height={200}></img>
+
           <div className="add-to-cart">
             <button onClick={addToCart}>Add to Cart</button>
           </div>
