@@ -63,7 +63,7 @@ function LearningPage(){
             <header className="learning-header">
                 <div className="container">
                     <div className="store-info">
-                        <h1 className="store-name">Your Learning Platform</h1>
+                        <h1 className="store-name">William's Computer Accessories</h1>
                     </div>
                     <div className="cart">
                          {/**Add relevant learning-related icons/links */}

@@ -41,6 +41,7 @@ function HomePage(){
    * The reason for using lins is to create links that take you from one pae to another
    */
 
+
     return(
         <div className="homepage">
             {/* The Menu bar which contains the Store Name and Cart */}
@@ -77,7 +78,7 @@ function HomePage(){
       {/* Container with a link called Click Here */}
       <div className='click-here-container'>
         <div className='container'>
-        <a href="/.learningPage.js" className="click-here-link">Need Help? 
+        <a href="./learningPage.js" className="click-here-link">Need Help? 
         Click Here</a>
         </div>
       </div>
@@ -98,6 +99,20 @@ function HomePage(){
             <li>Contact Us</li>
             <li>Privacy Policy</li>
             <li>About Us</li>
+
+            {/* {activePage === 1} &&
+            <div>homepage</div>
+
+            {activePage === 2} &&
+            <div>learningPage</div>
+
+            {activePage === 3} &&
+            <div>quizPage</div>
+
+            {activePage === 4} &&
+            <div>productPage</div>
+
+            <button onClick={()=> {activePage(activePage + 1)}}>NEXT PAGE</button> */}
 
           </ul>
         </div>
