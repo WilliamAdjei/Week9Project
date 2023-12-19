@@ -5,10 +5,10 @@ import './homepage.css';
 import LearningPage from './learningpage';
 import DellLaptop from "./images/Dell Inspiron.jpg"
 import dell from "./images/Dell Inspiron 3542.jpg"
+import SamsungGalaxy from "./images/Samsung Galaxy A8.jpg"
 
 
 /** 
-
    * Menu Bar for Store Name and Cart
    * In this file I am naming the divs, header, span and h1 needed for the Menu Bar  
    * containing the Store Name and Cart. 
@@ -156,6 +156,14 @@ function HomePage() {
               <p>Description: A modern, thoughtful design. Designed to last through regular use</p>
               <p>An inspiring new look and feel makes for a calmer desktop. Snap assistant helps focus your workflow while desktops allow you to organise your open windows.</p>
               <img src={dell} width={300} height={200}></img>
+              <button onClick={addToCart}>Add to Cart</button>
+
+              <h3>Brand: Samsung</h3>
+              <p>Color: Black</p>
+              <p>Model: Samsung Galaxy A8</p>
+              <p>Screen Size: 10.5 inches</p>
+              <p>Description: This thin and light Samsung Galaxy A8 tablet is perfect for taking your entertainment on the go.</p>
+              <img src={SamsungGalaxy} width={300} height={200}></img>
               <button onClick={addToCart}>Add to Cart</button>
               
             </div>
