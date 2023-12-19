@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import './homepage.css';
 import LearningPage from './learningpage';
+import DellLaptop from "./images/Dell Inspiron.jpg"
+import dell from "./images/Dell Inspiron 3542.jpg"
 
 
 /** 
@@ -78,7 +80,16 @@ import LearningPage from './learningpage';
 
 function HomePage() {
 
- 
+  //Creating a UseStateof the Cart Items
+  /**
+   * Setting the count to 0 so when an item is added it goes up by 1
+   */
+  const [cartItems, setCartItems] = useState(0);
+
+ //Add to Cart function that increases by 1 when an item is added
+  const addToCart = () => {
+    setCartItems(cartItems + 1);
+  };
  
   return (
 
@@ -93,6 +104,7 @@ function HomePage() {
             <span className="cart-icon" role="img" aria-label="cart icon">
               🛒
             </span>
+            <span className="cart-items">{cartItems}</span>
           </div>
         </div>
       </header>
@@ -134,6 +146,18 @@ function HomePage() {
               <p>Model: Inspiron 15</p>
               <p>Screen Size: 15.6 inches</p>
               <p>Description: A powerful laptop for everyday use.</p>
+              <img src={DellLaptop} width={300} height={200}></img>
+              <button onClick={addToCart}>Add to Cart</button>
+
+              <h3>Brand: Dell </h3>
+              <p>Color: Black</p>
+              <p>Model: Inspiron 3542</p>
+              <p>Screen Size: 15.6 inches</p>
+              <p>Description: A modern, thoughtful design. Designed to last through regular use</p>
+              <p>An inspiring new look and feel makes for a calmer desktop. Snap assistant helps focus your workflow while desktops allow you to organise your open windows.</p>
+              <img src={dell} width={300} height={200}></img>
+              <button onClick={addToCart}>Add to Cart</button>
+              
             </div>
             {/* Repeat similar blocks for other laptop recommendations */}
           </div>
