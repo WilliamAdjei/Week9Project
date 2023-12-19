@@ -1,11 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; 
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './homepage.css';
+import LearningPage from './learningpage';
 
-function HomePage() {
 
-
-  /** 
+/** 
 
    * Menu Bar for Store Name and Cart
    * In this file I am naming the divs, header, span and h1 needed for the Menu Bar  
@@ -72,16 +72,22 @@ function HomePage() {
 
    * The reason for using li tags is to create links that take you from one pae to another 
 
-   */ 
+   */
 
  
+
+function HomePage() {
+
+ 
+ 
   return (
+
     <div className="app">
       {/* Menu bar containing Store Name and Cart */}
       <header className="store-header">
         <div className="container">
           <div className="store-info">
-            <h1 className="store-name">Your Store</h1>
+            <h1 className="store-name">William's Computer Accessories</h1>
           </div>
           <div className="cart">
             <span className="cart-icon" role="img" aria-label="cart icon">
@@ -90,6 +96,8 @@ function HomePage() {
           </div>
         </div>
       </header>
+
+      
 
       {/* Menu bar containing Home, Laptops, PC, Gaming Monitors, Accessories, Headsets, Gaming Chairs, Mobile Devices */}
       <nav className="main-menu">
@@ -110,7 +118,7 @@ function HomePage() {
       {/* Container with a link called "Click Here" */}
       <section className="click-here-container">
         <div className="container">
-          <Link to="/learning-page">Need Help? Click Here</Link>
+        <Link to="./learningpage">Need Help? Click Here</Link>
         </div>
       </section>
 
@@ -132,6 +140,9 @@ function HomePage() {
         </div>
       </section>
 
+  
+
+
       {/* Menu Bar containing FAQ, Contact Us, Help, and Privacy Policy */}
       <footer className="bottom-bar">
         <div className="container">
@@ -146,5 +157,7 @@ function HomePage() {
     </div>
   );
 }
+
+
 
 export default HomePage
