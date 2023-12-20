@@ -2,7 +2,7 @@ import './Learningpage.css'
 
 
 
-function LearningPage(){
+function LEARNINGPAGE(){
 
     /**
      * Creating a Menu bar containing Store Name and the Cart
@@ -20,7 +20,8 @@ function LearningPage(){
      * For this section I used the nav, div, ul and li tags.
      * The reason for using the div tag is to name the container that will hold the categories of products
      * The reason for using the nav tag is to create a navigation menu
-     * The reason for using the ul and li tags is to create an item list which is part of an unordered or ordered list
+     * The reason for using the ul and li tags is to create an item list which 
+     * is part of an unordered or ordered list
      */
 
 
@@ -58,76 +59,73 @@ function LearningPage(){
      */
     return(
 
-        <div className="learning-app">
-            {/**Creating a Menu bar containing Store Name and the Cart */}
-            <header className="learning-header">
+        
+        <div className="learning-header">
+            {/*Contains store Name and the cart Information */}
+
+            <header className="webapp-header">
                 <div className="container">
-                    <div className="store-info">
-                        <h1 className="store-name">William's Computer Accessories</h1>
+                    <div className="info-webapp">
+                        <h1 className="website-name">William's Computer Accessories</h1>
                     </div>
-                    <div className="cart">
-                         {/**Add relevant learning-related icons/links */}
+                    <div className="basket">
+                        <span className="basket-icon" role="img" aria-label="basket icon">
+                        🛒
+                        </span>  
                     </div>
                 </div>
             </header>
 
-             {/**Menu bar containing Home, Laptops, PC, Gaming Monitors, Accessories, 
-              * Headsets, Gaming Chairs, Mobile Devices */}
-             <nav className="main-menu">
+
+             {/* What the menu bar contains */}
+             <nav className="mainMenu-bar">
                 <div className="container">
                     <ul>
-                       <li>Home</li> 
-                       <li>Laptops</li> 
-                       <li>PC</li> 
-                       <li>Gaming Monitors</li> 
-                       <li>Accessories</li> 
-                       <li>Headsets</li> 
-                       <li>Gaming Chairs</li> 
-                       <li>Mobile Devices</li> 
-                       {/**Remember to add navigation bar using props*/}
+                    <li>Home</li>
+                    <li>Laptops</li>
+                    <li>PC</li>
+                    <li>Accessories</li>
+                    <li>Tablets</li>
                     </ul>
                 </div>
              </nav>
 
-             {/**Questionnaire container. Add answer containers */}
-             <section className="questionnaire-container">
+             {/* What the Questionnaire will contain*/}
+             <section className="questionnaire-box">
                 <div className="container">
-                    <h2>Questionnaire</h2>
-                    <ul>
-                        <li>Are you familiar with computers</li>
-                        <li>Do you have a job that requires use of latops/PC?</li>
-                        <li>How often do you browse the internet</li>
-                        <li>What tasks do you use your computer to complete</li>
-                    </ul>
-                    <a href="/find-out" className="find-out-link">Find Out what you are looking for</a>
-                    <h2>Stories</h2>
-                    {/**Adding stories from people wo have completed the program */}
+                    <h2>Questionnaire To Help You Find What You Need</h2>
+                    <a href="/Find-interest" className="findingout-info">Find Out What You Are Looking For</a>
+                    <h2>Stories of People Who Were Successful with Us</h2>
+                    {/**Stories of people succeeding with the program */}
                 </div>
              </section>
 
-             {/**External Links and Lesson FAQ container */}
-             <section className="external-links-container">
+             {/**Frequently Asked Questions about lesson and External links*/}
+             <section className="externallinks">
                 <div className="container">
-                    <h2>External Links</h2>
-                    {/**Add external links */}
-                    <h2>Lesson FAQ</h2>
-                    {/**Add frequently asked questions about lessons */}
+                
+                    <h3>External Links</h3>
+                    <a href="/external-links" className="linkfor-external">External Links</a>
+                    {/**external links for learning page */}
+                    <h3>Lesson FAQ</h3>
+                    {/**Questions appearing often for the lessons */}
+                    <a href="/external-links" className="linkfor-external">Links To Enquiries of lessons</a>
                 </div>
              </section>
-             {/**Small container with a link to Book Class */}
-             <section className="book-class-container">
+             {/**Booking Class Link */}
+             <section className="classbooking-container">
                 <div className="container">
-                    <a href="/book-class">Book Class</a>
+                    <a href="/class-booking">Book Your Class</a>
                 </div>
              </section>
 
-             {/**Bottom Menu Bar containing FAQ, Contact Us, About Us, and Privacy */}
+             {/**Items within the bottom Bar Menu*/}
              <footer className="bottom-bar">
                 <div className="container">
                     <ul>
-                        <li>FAQ</li>
-                        <li>Contact Us</li>
                         <li>About Us</li>
+                        <li>FAQ</li>
+                        <li>Help</li>
                     </ul>
 
                 </div>
@@ -137,4 +135,4 @@ function LearningPage(){
     )
 }
 
-export default LearningPage
+export default LEARNINGPAGE

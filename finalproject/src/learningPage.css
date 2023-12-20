@@ -1,124 +1,135 @@
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0;
+  margin: 0;
   }
   
   .container {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
   }
   
-  /* Learning Header */
-  .learning-header {
-    background-color: #333;
+  
+  /* Top of the Web App */
+.webapp-header {
+  background-color: white;
+  color: blue;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-webapp{
+  flex: 1;
+}
+
+.website-name {
+  margin: 10;
+}
+
+.basket {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.basket-icon {
+  margin-right: 6px;
+}
+  
+  /* creating the First main menu*/
+  .mainMenu-bar {
+    background-color: black;
+    padding: 11px;
     color: #fff;
-    padding: 15px 0;
   }
   
-  .store-info {
-    flex: 1;
-  }
-  
-  .store-name {
-    margin: 0;
-  }
-  
-  .cart {
-    display: flex;
-    align-items: center;
-  }
-  
-  /* Main Menu */
-  .main-menu {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 0;
-  }
-  
-  .main-menu ul {
+  .Main-Menu ul {
     list-style: none;
     display: flex;
   }
   
-  .main-menu li {
-    margin-right: 20px;
+  .Main-Menu li {
+    margin-right: 15px;
     cursor: pointer;
   }
   
-  /* Questionnaire Container */
-  .questionnaire-container {
-    background-color: #f5f5f5;
-    padding: 20px 0;
+  
+  /* What the questionnaire Container contains */
+  .questionnaire-box {
+    padding: 18px;
+    background-color: blanchedalmond;
+    
   }
   
-  .questionnaire-container h2 {
-    margin-bottom: 10px;
+  .questionnaire-box h2 {
+    margin-bottom: 15px;
   }
   
-  .questionnaire-container ul {
+  .questionnaire-box ul {
     list-style: none;
   }
   
-  /* Find Out Link */
-  .find-out-link {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
+  /* editing find out link */
+  .findingout-info {
+  color: blueviolet;
+  font-weight: lighter;
   }
   
-  /* Stories Container */
-  .stories-container {
-    padding: 20px 0;
+  /* stories of people container*/
+  .people-storiescontainer {
+    padding: 20px;
   }
   
-  .stories-container h2 {
-    margin-bottom: 10px;
+  .people-storiescontainer h2 {
+    margin-bottom: 17px;
   }
   
   /* External Links and Lesson FAQ Container */
-  .external-links-container {
-    padding: 20px 0;
+  .externallinks{
+    padding: 10px;
   }
   
-  .external-links-container h2 {
+  .externallinks h2 {
     margin-bottom: 10px;
   }
-  
-  /* Book Class Container */
-  .book-class-container {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+
+  .linksfor-external{
+  color: blueviolet;
+  font-weight: bolder;
   }
   
-  .book-class-container a {
-    color: #fff;
+  /* Class booking container */
+  .classbooking-container {
+    background-color: gray;
+    text-align: center;
+    color: black;
+    padding: 14px 0;
+    
+  }
+  
+  .classbooking-container a {
+    color: black;
     text-decoration: none;
     font-weight: bold;
   }
   
-  /* Bottom Bar */
+  /* menu for the bottom Bar */
   .bottom-bar {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+  color: black;
+  background-color: blue;
+  text-align: center;
+  padding: 15px 0;
   }
   
   .bottom-bar ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+  justify-content: center;
+  display: flex;
   }
   
   .bottom-bar li {
-    margin: 0 15px;
     cursor: pointer;
+    margin: 20px;
   }
   

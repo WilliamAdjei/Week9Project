@@ -1,107 +1,112 @@
 body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 0;
+  margin: 0;
+ 
 }
 
 .container {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
-/* Store Header */
-.store-header {
-  background-color: #333;
-  color: #fff;
-  padding: 15px 0;
+/* Top of the Web App */
+.webapp-header {
+  background-color: white;
+  color: blue;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
 }
 
-.store-info {
-  flex: 3;
+.info-webapp{
+  flex: 1;
 }
 
-.store-name {
-  margin: 0;
+.website-name {
+  margin: 10;
 }
 
-.cart {
+.basket {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-.cart-icon {
-  margin-right: 5px;
+.basket-icon {
+  margin-right: 6px;
 }
 
-/* Main Menu */
-.main-menu {
-  background-color: #007bff;
+/* creating the main menu*/
+.mainMenu-bar {
+  background-color: black;
+  padding: 11px;
   color: #fff;
-  padding: 10px 0;
 }
 
-.main-menu ul {
+.Main-Menu ul {
   list-style: none;
   display: flex;
 }
 
-.main-menu li {
-  margin-right: 20px;
+.Main-Menu li {
+  margin-right: 15px;
   cursor: pointer;
 }
 
-/* Click Here Container */
-.click-here-container {
-  padding: 20px 0;
+/* Container containing the Link */
+.container-click-here {
+  padding: 15px;
 }
 
-.click-here-container a {
-  color: #007bff;
-  text-decoration: none;
-  font-weight: bold;
+.container-click-here a {
+  color: blueviolet;
+  font-weight: lighter;
 }
 
-/* Product Recommendations */
-.product-recommendations {
-  padding: 20px 0;
+/* Recommend products section */
+.recommending-products {
+  padding: 25px;
 }
 
-.product-recommendations h2 {
-  margin-bottom: 10px;
+.recommending-products h2 {
+  margin-bottom: 14px;
 }
 
-.product-list {
-  display: flex;
+.lists-Product {
   flex-wrap: wrap;
+  display: flex;
+  
 }
 
 .product-item {
-  width: 48%;
+  width: 50%;
   padding: 10px;
   margin: 0 1% 20px 1%;
-  border: 1px solid #ddd;
+  border: 1px solid gold;
   box-sizing: border-box;
 }
 
-/* Bottom Bar */
+/* Menu for the bottom Bar */
 .bottom-bar {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
+  color: black;
+  background-color: blue;
   text-align: center;
+  padding: 15px 0;
+  
 }
 
 .bottom-bar ul {
-  list-style: none;
-  display: flex;
   justify-content: center;
+  display: flex;
+  list-style: none;
+  
 }
 
 .bottom-bar li {
-  margin: 0 15px;
   cursor: pointer;
+  margin: 20px;
+  
 }
+
