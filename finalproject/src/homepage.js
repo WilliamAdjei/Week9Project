@@ -78,7 +78,7 @@ import SamsungGalaxy from "./images/Samsung Galaxy A8.jpg"
 
  
 
-function HomePage() {
+function HOMEPAGE() {
 
   //Creating a UseStateof the Cart Items
   /**
@@ -192,4 +192,4 @@ function HomePage() {
 
 
 
-export default HomePage
+export default HOMEPAGE

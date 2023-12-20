@@ -16,6 +16,7 @@ function App() {
       <HomePage></HomePage>
       {/* <LearningPage></LearningPage> */}
      {/* <ProductPage></ProductPage> */}
+     {/* <QuizPage></QuizPage> */}
      
       
     </div>
