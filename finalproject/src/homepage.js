@@ -11,10 +11,8 @@ import SamsungGalaxy from "./images/Samsung Galaxy A8.jpg"
    * Menu Bar for Store Name and Cart
    * In this file I am naming the divs, header, span and h1 needed for the Menu Bar  
    * containing the Store Name and Cart. 
-
    * The H1 acts like a label at the top of the page, the divs are for  
    * grouping sections of the website together to style it. 
-
    * The span divs are used to group elements of the page together to style them 
    */ 
 
@@ -25,13 +23,9 @@ import SamsungGalaxy from "./images/Samsung Galaxy A8.jpg"
   /** 
 
    * Menu bar containing sections like Home, Laptops, PC, Gaming Monitors 
-
    * For this section I used the nav, div, ul and li tags. 
-
    * The reason for using the div tag is to name the container that will hold the categories of products 
-
    * The reason for using the nav tag is to create a navigation menu 
-
    * The reason for using the ul and li tags is to create an item list which is part of an unordered or ordered list 
 
    */ 
@@ -43,11 +37,8 @@ import SamsungGalaxy from "./images/Samsung Galaxy A8.jpg"
   /** 
 
    * Container with a link called Click Here 
-
    * For this section I used div and a tags 
-
    * The reason for using the a tags is to create a link that takes you from one page to another when clicked on 
-
    */ 
 
  
@@ -66,11 +57,8 @@ import SamsungGalaxy from "./images/Samsung Galaxy A8.jpg"
   /** 
 
    * Menu Bar containing FAQ, contact us, and privacy policy 
-
    * For this section I used footer, div, ul and li tags. 
-
    * The reason for using footer is to represent data containing copyright information e.g Privacy Policy 
-
    * The reason for using li tags is to create links that take you from one pae to another 
 
    */
@@ -79,7 +67,7 @@ import SamsungGalaxy from "./images/Samsung Galaxy A8.jpg"
 
 function HOMEPAGE() {
 
-  //Creating a UseStateof the Cart Items
+  //Creating a UseState of the Cart Items
   /**
    * Setting the count to 0 so when an item is added it goes up by 1
    */
