@@ -62,7 +62,6 @@ function QuizPage() {
   /**
    * Method used to calculate the score the user gets after choosing therr answers.
    * This method is assuming the process that happens when there is a correct answer.
-   * I used onclick for the
    */
   const calculateScore = () => {
     const correctAnswers = [0, 1, 0, 1, 2]; // Assuming correct answers for each question

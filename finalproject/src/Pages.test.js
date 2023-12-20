@@ -7,12 +7,16 @@
 //Using Try Catch method
 
 
+import QuizQuestions from "./quizquestions.js"
+
+
 /**
  * User can select options of answers on the quiz page
  */
 
 //Creating a QuizPage function
 function QuizQuestions(question, OptionsOfanswer){
+
  question = "What is the primary function of a CPU?"
  OptionsOfanswer = "Processing data", "storing data", "displaying data", 
  "inputting data", "carry out a set of instructions for the computer"
