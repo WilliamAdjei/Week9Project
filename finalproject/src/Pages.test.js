@@ -4,11 +4,14 @@
 //4. Derive the actual output from the test data
 //5. Compare the expected output to the actual output
 
+//Using Try Catch method
+
 
 /**
  * User can select options of answers on the quiz page
  */
 
+//Creating a QuizPage function
 function QuizQuestions(question, OptionsOfanswer){
  question = "What is the primary function of a CPU?"
  OptionsOfanswer = "Processing data", "storing data", "displaying data", 
@@ -16,20 +19,22 @@ function QuizQuestions(question, OptionsOfanswer){
 
 }
 
+//Calling the QuizQuestions
 QuizQuestions()
 
 
+//The test
 test("User can select options of answers on the quiz page", ()=>{
     //creating test data
     let question = "What is the primary function of a CPU?"
     let answers = "carry out a set of instructions for the computer"
 
     //Formulate expected output
-    let expectedOutput = answers
+    let expectedOutput = "carry out a set of instructions for the computer"
 
     //Derive actual output
     let actualOutput = QuizQuestions(question, answers)
 
-    //Compare the actual and expected outputs
+    //Compare the actual and expected outputs of the answers
     expect(actualOutput).toBe(expectedOutput)
 })
