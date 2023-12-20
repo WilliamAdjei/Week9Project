@@ -1,9 +1,9 @@
 import './App.css';
-import QuizPage from './quizPage';
+
 
 import HomePage from './homepage';
 import ProductPage from './productPage';
-import LearningPage from './learningpage';
+
 
 
 

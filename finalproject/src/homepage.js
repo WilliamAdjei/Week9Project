@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import './homepage.css';
-import LearningPage from './learningpage';
 import DellLaptop from "./images/Dell Inspiron.jpg"
 import dell from "./images/Dell Inspiron 3542.jpg"
 import SamsungGalaxy from "./images/Samsung Galaxy A8.jpg"
@@ -130,7 +129,7 @@ function HOMEPAGE() {
       {/* Container with a link called "Click Here" */}
       <section className="click-here-container">
         <div className="container">
-        <Link to="./learningpage">Need Help? Click Here</Link>
+        <a href='./learningpage.js'>Need Help? Click Here</a>
         </div>
       </section>
 
