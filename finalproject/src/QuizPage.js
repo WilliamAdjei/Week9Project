@@ -50,6 +50,11 @@ function QuizPage() {
    * @param {*} choiceIndex 
    */
    
+  /**
+   * 
+   * @param {Control Structures} questionIndex 
+   * @param {useState, onClick, if statement, ternary operators, arrow functions} choiceIndex 
+   */
   const handleAnswer = (questionIndex, choiceIndex) => {
     if (selectedAnswers[questionIndex] === null) {
       const newSelectedAnswers = [...selectedAnswers];

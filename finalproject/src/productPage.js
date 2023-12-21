@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import './App.css';
+import './productPage.css'
 import laptop from "./images/Dell Latitude 9430.webp"
 import tablet from "./images/Samsung Galaxy tab a8.jpg"
 
-function ProductPage() {
+function BuyProduct() {
   //Creating a UseStateof the Cart Items
   /**
    * Setting the count to 0 so when an item is added it goes up by 1
    */
-  const [cartItems, setCartItems] = useState(0);
+  const [itemsBasket, setItemsBasket] = useState(0);
 
   //Add to Cart function to add the items to the basket
   /**
@@ -47,72 +47,75 @@ function ProductPage() {
     * The <div> is to create a container that contains the elements on the page.
     * The reason for using footer is to represent data containing important information e.g Contact Us
    */
-  const addToCart = () => {
-    setCartItems(cartItems + 1);
+  const addingToBasket = () => {
+    setItemsBasket(itemsBasket + 1);
   };
 
   return (
-    <div className="app">
-      {/* Menu bar containing Store Name and Cart */}
-      <header className="store-header">
+    <div className="App">
+      {/* Contains store Name and the cart Information on menu bar */}
+      <header className="webapp-header">
         <div className="container">
-          <div className="store-info">
-            <h1 className="store-name">William's Computer Accessories</h1>
+          <div className="info-webapp">
+            <h1 className="website-name">William's Computer Accessories</h1>
           </div>
-          <div className="cart">
-            <span className="cart-icon" role="img" aria-label="cart icon">
+          <div className="basket">
+            <span className="basket-icon" role="img" aria-label="cart icon">
               🛒
             </span>
-            <span className="cart-items">{cartItems}</span>
+            <span className="basket-items">{itemsBasket}</span>
           </div>
         </div>
       </header>
 
-      {/* Product Container */}
-      <section className="product-container">
+      {/* What the products will contain */}
+      <section className="holder-product">
         <div className="container">
-          <div className="product-image"></div>
+          <div className="picture-produc"></div>
         </div>
       </section>
 
-      {/* Product Info Container */}
-      <section className="product-info-container">
+      {/* where the information of the Products will be */}
+      <section className="description-product-container">
         <div className="container">
           <h2>Dell Laptop 9430</h2>
           <h3>About This Item</h3>
           <p>
-          The Latitude 9430 blends style and business. Its dark gray chassis is all metal and of very high quality. None of its surfaces flex even under strong pressure.
-          Dell's Latitude 9430 2-in-1 packs the right features for a premium business laptop, including a premium build, battery life, and more.
+          The Latitude 9430 blends style and business. Its dark gray chassis is all metal and of very high quality. 
+          None of its surfaces flex even under strong pressure.
+          Dell's Latitude 9430 2-in-1 packs the right features for a premium business laptop, 
+          including a premium build, battery life, and more.
           </p>
           <p>
-          This product is in "Excellent condition". It shows no signs of cosmetic damage. This product is eligible for a replacement or refund within 1-Year of receipt if it does not work as expected.
+          It is a powerful and efficient laptop in an excellent condition.
           </p>
           <img src={laptop} width={300} height={200}></img>
-          <div className="add-to-cart">
-            <button onClick={addToCart}>Add to Cart</button>
+          <div className="add-to-basket">
+            <button onClick={addingToBasket}>Add to Basket</button>
           </div>
 
           <h2> Samsung Galaxy Tab a8</h2>
           <h3>About This Item</h3>
           <p>This tablet has many features. It also comes with a pen that you can use to make notes</p>
           <p>Playful aesthetics with a touch of style: the Galaxy Tab A8 has a lively mood and a youthful look.</p>
-          <p>The Galaxy Tab A8 Tablet PC is designed to give you an absolute immerimmerEven when you are on the go, the tablet PC Galaxy Tab A8 opens up an immersive universe of content and games and activities that young people love.</p>
+          <p>The Galaxy Tab A8 Tablet PC is designed to give you an  immersion.
+            Even when you are on the go, the tablet PC Galaxy Tab A8 opens up an immersive universe of content 
+            and games and activities that young people love.</p>
           <img src={tablet} width={300} height={200}></img>
 
-          <div className="add-to-cart">
-            <button onClick={addToCart}>Add to Cart</button>
+          <div className="add-to-basket">
+            <button onClick={addingToBasket}>Add to Basket</button>
           </div>
         </div>
       </section>
 
-      {/* Bottom Menu Bar containing FAQ, Contact Us, About Us, and Privacy Policy */}
-      <footer className="bottom-bar">
+      {/* Information the bottom bar will hold*/}
+      <footer className="lowestpart-bar">
         <div className="container">
           <ul>
-            <li>FAQ</li>
-            <li>Contact Us</li>
             <li>About Us</li>
-            <li>Privacy Policy</li>
+            <li>FAQ</li>
+            <li>Help</li>
           </ul>
         </div>
       </footer>
@@ -120,5 +123,4 @@ function ProductPage() {
   );
 }
 
-export default ProductPage;
-
+export default BuyProduct;
