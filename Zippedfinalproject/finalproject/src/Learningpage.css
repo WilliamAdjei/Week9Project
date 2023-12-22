@@ -1,0 +1,135 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0;
+  margin: 0;
+  }
+  
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  
+  /* Top of the Web App */
+.webapp-header {
+  background-color: white;
+  color: blue;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-webapp{
+  flex: 1;
+}
+
+.website-name {
+  margin: 10;
+}
+
+.basket {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.basket-icon {
+  margin-right: 6px;
+}
+  
+  /* creating the First main menu*/
+  .mainMenu-bar {
+    background-color: black;
+    padding: 11px;
+    color: #fff;
+  }
+  
+  .Main-Menu ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .Main-Menu li {
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  
+  
+  /* What the questionnaire Container contains */
+  .questionnaire-box {
+    padding: 18px;
+    background-color: blanchedalmond;
+    
+  }
+  
+  .questionnaire-box h2 {
+    margin-bottom: 15px;
+  }
+  
+  .questionnaire-box ul {
+    list-style: none;
+  }
+  
+  /* editing find out link */
+  .findingout-info {
+  color: blueviolet;
+  font-weight: lighter;
+  }
+  
+  /* stories of people container*/
+  .people-storiescontainer {
+    padding: 20px;
+  }
+  
+  .people-storiescontainer h2 {
+    margin-bottom: 17px;
+  }
+  
+  /* External Links and Lesson FAQ Container */
+  .externallinks{
+    padding: 10px;
+  }
+  
+  .externallinks h2 {
+    margin-bottom: 10px;
+  }
+
+  .linksfor-external{
+  color: blueviolet;
+  font-weight: bolder;
+  }
+  
+  /* Class booking container */
+  .classbooking-container {
+    background-color: gray;
+    text-align: center;
+    color: black;
+    padding: 14px 0;
+    
+  }
+  
+  .classbooking-container a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* menu for the bottom Bar */
+  .bottom-bar {
+  color: black;
+  background-color: blue;
+  text-align: center;
+  padding: 15px 0;
+  }
+  
+  .bottom-bar ul {
+  justify-content: center;
+  display: flex;
+  }
+  
+  .bottom-bar li {
+    cursor: pointer;
+    margin: 20px;
+  }
+  

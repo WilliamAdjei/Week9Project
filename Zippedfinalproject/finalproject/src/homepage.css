@@ -1,0 +1,112 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0;
+  margin: 0;
+ 
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Top of the Web App */
+.webapp-header {
+  background-color: white;
+  color: blue;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-webapp{
+  flex: 1;
+}
+
+.website-name {
+  margin: 10;
+}
+
+.basket {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.basket-icon {
+  margin-right: 6px;
+}
+
+/* creating the main menu*/
+.mainMenu-bar {
+  background-color: black;
+  padding: 11px;
+  color: #fff;
+}
+
+.Main-Menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.Main-Menu li {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+/* Container containing the Link */
+.container-click-here {
+  padding: 15px;
+}
+
+.container-click-here a {
+  color: blueviolet;
+  font-weight: lighter;
+}
+
+/* Recommend products section */
+.recommending-products {
+  padding: 25px;
+}
+
+.recommending-products h2 {
+  margin-bottom: 14px;
+}
+
+.lists-Product {
+  flex-wrap: wrap;
+  display: flex;
+  
+}
+
+.product-item {
+  width: 50%;
+  padding: 10px;
+  margin: 0 1% 20px 1%;
+  border: 1px solid gold;
+  box-sizing: border-box;
+}
+
+/* Menu for the bottom Bar */
+.bottom-bar {
+  color: black;
+  background-color: blue;
+  text-align: center;
+  padding: 15px 0;
+  
+}
+
+.bottom-bar ul {
+  justify-content: center;
+  display: flex;
+  list-style: none;
+  
+}
+
+.bottom-bar li {
+  cursor: pointer;
+  margin: 20px;
+  
+}
+

@@ -1,0 +1,95 @@
+body {
+  margin: 5;
+  padding: 5;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+  width: 80%;
+  
+}
+
+/* Top of the Web App */
+.webapp-header {
+  color: blue;
+  padding: 10px;
+  background-color: white;
+}
+
+.info-webapp{
+  flex: 10;
+}
+
+.website-name {
+  margin: 12;
+  justify-content: space-between;
+}
+
+.basket {
+
+  align-items: normal;
+  
+}
+
+.basket-icon {
+  margin-right: 12px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  font-size: 14px;
+}
+
+/* what Product Contains */
+.holder-product {
+  margin-top: 20px;
+}
+
+.holder-product .container {
+  display: flex;
+  justify-content: center;
+}
+
+.picture-product {
+  width: 300px;
+  height: 200px;
+  background-color: black; 
+}
+
+/* Information/description of Product */
+.description-product-container {
+  background-color: goldenrod;
+  padding: 11px;
+  color: white;
+  font-size: medium;
+}
+
+.description-product-container h2 {
+  margin-bottom: 5px;
+}
+
+.add-to-basket button {
+  padding: 10px;
+  border-radius: 3rem;
+  color: blue;
+  background-color: grey;
+  cursor: pointer;
+  box-sizing: border-box
+}
+
+/* what the Bottom Menu bar Contains */
+.lowestpart-bar{
+  padding: 8px;
+  background-color: blue;
+  color: black;
+  
+}
+
+.lowestpart-bar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.lowestpart-bar li {
+cursor: pointer;
+margin: 8px;
+}
